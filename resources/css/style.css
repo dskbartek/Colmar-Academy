@@ -1,8 +1,10 @@
-/* Universal styles */
+  /* Universal styles */
 body {
   font-size: 16px;
   font-family: "Lato" , sans-serif;
   margin: 0;
+  color: darkslategray;
+  background-color: Whitesmoke
 }
 /* Header */
 header {
@@ -10,32 +12,28 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 1;
   background-color: white;
   width: 100%;
   height: 64px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navmobile {
   display: none;
 }
 
-@media only screen and (max-width: 470px) {
-  header {
-    display: none;
-  }
-  .navmobile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    background-color: white;
-    height: 64px;
-    width: 100%;
-  }
+.navheader a {
+  color: darkslategray;
+}
+
+.navheader a:hover {
+  color: DarkSeaGreen;
 }
 
 .col1 {
   font-weight: bold;
+  color: black;
 }
 
 .logo {
@@ -62,29 +60,14 @@ a {
 /* Part1 */
 .part1 {
   display: flex;
-  background-color: grey;
+  background-color: #E6E6E6;
   padding-top: 64px;
   padding-left: 24px;
   padding-bottom: 32px;
 }
 
-@media only screen and (max-width: 470px) {
-  .part1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    padding-top: 32px;
-  }
-}
-
 .part1img {
   width: 60%
-}
-
-@media only screen and (max-width: 470px) {
-  .part1img {
-    width: 100%;
-  }
 }
 
 .part1img img {
@@ -96,18 +79,6 @@ a {
   display: flex;
   margin-left: 24px;
   width: 40%;
-}
-
-@media only screen and (max-width: 470px) {
-  .part1t {
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    width: 100%;
-  }
-  .part1txt {
-    margin-right: 16px;
-  }
 }
 
 .part1txt {
@@ -125,8 +96,13 @@ a {
 .part1txt a {
   padding: 8px 0 8px 0;
   text-align: center;
-  background-color: black;
+  background-color: darkslategray;
   color: white;
+  border-radius: 5px;
+}
+
+.part1txt a:hover {
+  background-color: DarkSeaGreen;
 }
 
 /* Part2 */
@@ -135,15 +111,13 @@ a {
   margin: 32px 0 32px 24px;
 }
 
-@media only screen and (max-width: 470px) {
-  .part2left {
-    display: none;
-  }
-}
-
-.part2 img {
+.part2left img {
   width: 100%;
   height: auto;
+}
+
+.mobilejpg {
+  display: none;
 }
 
 .part2left h1 {
@@ -163,25 +137,16 @@ a {
 
 .right {
   display: flex;
+  margin-left: 24px;
 }
 
-@media only screen and (max-width: 470px) {
-  .part2right {
-    width: 100%;
-  }
-  .right {
-    display: flex;
-    flex-direction: column;
-  }
-  .right img {
-    width: 100%;
-  }
+.right:hover {
+  background-color: #E6E6E6;
 }
 
-.right img {
+.rightjpg {
   width: 35%;
   padding: 16px;
-  margin-left: 24px;
 }
 
 .righttxt {
@@ -190,21 +155,13 @@ a {
   justify-content: center;
 }
 
-/* Part3 */
-.part3 {
-  background-color: grey;
+.righttxt a:hover {
+  color: DarkSeaGreen;
 }
 
-@media only screen and (max-width: 470px) {
-  .part3 {
-    background-color: inherit;
-  }
-  .part3 h1 {
-    border-top: 1px solid grey;
-  }
-  .part3 .boxes {
-    display: none;
-  }
+/* Part3 */
+.part3 {
+  background-color: #E6E6E6;
 }
 
 .part3 h1 {
@@ -229,6 +186,10 @@ a {
   width: 30%;
 }
 
+.box:hover {
+  opacity: 0.8;
+}
+
 .box img {
   height: auto;
   width: 100%;
@@ -237,6 +198,7 @@ a {
 .boxtxt {
   margin: 16px 16px 24px 16px;
   width: auto;
+  color: darkslategray;
 }
 
 .course {
@@ -245,20 +207,6 @@ a {
 
 .boxesmobile {
   display: none;
-}
-
-@media only screen and (max-width: 470px) {
-  .boxesmobile {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 32px;
-    border-bottom: 1px solid grey;
-  }
-  .boxmobile {
-    margin: 8px 16px;
-    padding: 16px 0 24px 16px;
-    background-color: grey;
-  }
 }
 
 /* Part4 */
@@ -271,21 +219,6 @@ h1 {
 .part4 {
   display: flex;
   margin: 32px 0 32px 24px;
-}
-
-@media only screen and (max-width: 470px) {
-  .part4 {
-    margin-left: 0
-  }
-  .part4left h2 {
-    display: none;
-  }
-  .part4left p {
-    display: none;
-  }
-  .part4right {
-    display: none;
-  }
 }
 
 .part4 video {
@@ -313,6 +246,10 @@ h1 {
   display: flex;
 }
 
+.right4:hover {
+  background-color: #E6E6E6;
+}
+
 .right4 img {
   height: auto;
   width: 35%;
@@ -324,6 +261,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+
+.right4txt a {
+  color: darkslategray;
+}
 /* Footer */
 footer {
   display: flex;
@@ -332,7 +273,134 @@ footer {
   border-top: 1px solid grey;
 }
 
+/* media */
+
 @media only screen and (max-width: 470px) {
+  header {
+    display: none;
+  }
+  .navmobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    height: 64px;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .part1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 32px;
+  }
+  .part1img {
+    width: 100%;
+  }
+  .part1t {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .part1txt {
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .part2 {
+    margin: 0;
+  }
+  .part2left {
+    display: none;
+  }
+  .part2right {
+    margin: 0;
+    width: 100%
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 64px 16px;
+  }
+  .rightjpg {
+    display: none;
+  }
+  .mobilejpg {
+    display: flex;
+    width: 100%;
+  }
+  .righttxt {
+    margin-left: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .part3 {
+    background-color: inherit;
+  }
+  .part3 h1 {
+    border-top: 1px solid grey;
+  }
+  .part3 h1{
+    margin-top: -32px;
+  }
+  .part3 .boxes {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .boxesmobile {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    border-bottom: 1px solid darkslategray;
+  }
+  .boxmobile {
+    margin: 8px 16px;
+    padding: 16px 0 24px 16px;
+    background-color: #E6E6E6;
+  }
+  .boxmobile h2 {
+    color: darkslategray;
+  }
+  .boxmobile:hover {
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .part4 {
+    margin: 0 0 24px 0;
+  }
+  h1 {
+    margin-bottom: 16px;
+  }
+  .part4left h2 {
+    display: none;
+  }
+  .part4left p {
+    display: none;
+  }
+  .part4right {
+    display: none;
+  }
+  .part4left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .terms {
     display: none;
   }
