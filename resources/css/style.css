@@ -4,7 +4,7 @@ body {
   font-family: "Lato" , sans-serif;
   margin: 0;
   color: darkslategray;
-  background-color: Whitesmoke
+  background-color: Whitesmoke;
 }
 /* Header */
 header {
@@ -15,7 +15,7 @@ header {
   z-index: 1;
   background-color: white;
   width: 100%;
-  height: 64px;
+  height: 4rem;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -39,18 +39,18 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  font-size: 20px;
-  margin-left: 24px;
-  height: 32px;
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+  height: 2rem;
 }
 
 nav {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 nav a {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 a {
@@ -61,9 +61,9 @@ a {
 .part1 {
   display: flex;
   background-color: #E6E6E6;
-  padding-top: 64px;
-  padding-left: 24px;
-  padding-bottom: 32px;
+  padding-top: 4rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .part1img {
@@ -71,13 +71,13 @@ a {
 }
 
 .part1img img {
-  margin-top: 32px;
+  margin-top: 2rem;
   width: 100%;
 }
 
 .part1t {
   display: flex;
-  margin-left: 24px;
+  margin-left: 1.5rem;
   width: 40%;
 }
 
@@ -86,7 +86,7 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .part1txt h1 {
@@ -94,7 +94,7 @@ a {
 }
 
 .part1txt a {
-  padding: 8px 0 8px 0;
+  padding: 0.5rem 0 0.5rem 0;
   text-align: center;
   background-color: darkslategray;
   color: white;
@@ -108,7 +108,7 @@ a {
 /* Part2 */
 .part2 {
   display: flex;
-  margin: 32px 0 32px 24px;
+  margin: 2rem 0 2rem 1.5rem;
 }
 
 .part2left img {
@@ -121,8 +121,8 @@ a {
 }
 
 .part2left h1 {
-  margin-top: 32px;
-  margin-bottom: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .part2left {
@@ -137,7 +137,7 @@ a {
 
 .right {
   display: flex;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .right:hover {
@@ -146,7 +146,7 @@ a {
 
 .rightjpg {
   width: 35%;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .righttxt {
@@ -166,8 +166,8 @@ a {
 
 .part3 h1 {
   text-align: center;
-  padding-top: 32px;
-  margin-bottom: 16px;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .boxes {
@@ -175,14 +175,14 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   width: auto;
-  margin-left: 56px;
-  margin-right: 56px;
-  padding-bottom: 16px;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  padding-bottom: 1rem;
 }
 
 .box {
   background-color: white;
-  margin: 16px;
+  margin: 1rem;
   width: 30%;
 }
 
@@ -196,13 +196,13 @@ a {
 }
 
 .boxtxt {
-  margin: 16px 16px 24px 16px;
+  margin: 1rem 1rem 1.5rem 1rem;
   width: auto;
   color: darkslategray;
 }
 
 .course {
-  margin: 8px 0 8px 0;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .boxesmobile {
@@ -211,14 +211,14 @@ a {
 
 /* Part4 */
 h1 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .part4 {
   display: flex;
-  margin: 32px 0 32px 24px;
+  margin: 2rem 0 2rem 1.5rem;
 }
 
 .part4 video {
@@ -227,8 +227,8 @@ h1 {
 }
 
 .part4left h2 {
-  margin-top: 24px;
-  margin-bottom: 8px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .part4left {
@@ -236,10 +236,10 @@ h1 {
 }
 
 .part4right {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   width: 40%;
-  margin-top: -16px;
+  margin-top: -1rem;
 }
 
 .right4 {
@@ -253,7 +253,7 @@ h1 {
 .right4 img {
   height: auto;
   width: 35%;
-  margin: 16px;
+  margin: 1rem;
 }
 
 .right4txt {
@@ -269,7 +269,7 @@ h1 {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 16px 24px 64px 24px;
+  padding: 1rem 1.5rem 4rem 1.5rem;
   border-top: 1px solid grey;
 }
 
@@ -285,9 +285,9 @@ footer {
     align-items: center;
     position: fixed;
     background-color: white;
-    height: 64px;
+    height: 4rem;
     width: 100%;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -296,7 +296,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding-left: 0;
-    padding-top: 32px;
+    padding-top: 2rem;
   }
   .part1img {
     width: 100%;
@@ -308,7 +308,7 @@ footer {
     width: 100%;
   }
   .part1txt {
-    margin-right: 16px;
+    margin-right: 1rem;
   }
 }
 
@@ -326,7 +326,7 @@ footer {
   .right {
     display: flex;
     flex-direction: column;
-    margin: 16px 16px 64px 16px;
+    margin: 1rem 1rem 4rem 1rem;
   }
   .rightjpg {
     display: none;
@@ -336,7 +336,7 @@ footer {
     width: 100%;
   }
   .righttxt {
-    margin-left: 16px;
+    margin-left: 1rem;
   }
 }
 
@@ -348,7 +348,7 @@ footer {
     border-top: 1px solid grey;
   }
   .part3 h1{
-    margin-top: -32px;
+    margin-top: -2rem;
   }
   .part3 .boxes {
     display: none;
@@ -359,12 +359,12 @@ footer {
   .boxesmobile {
     display: flex;
     flex-direction: column;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     border-bottom: 1px solid darkslategray;
   }
   .boxmobile {
-    margin: 8px 16px;
-    padding: 16px 0 24px 16px;
+    margin: 0.5rem 1rem;
+    padding: 1rem 0 1.5rem 1rem;
     background-color: #E6E6E6;
   }
   .boxmobile h2 {
@@ -377,10 +377,10 @@ footer {
 
 @media only screen and (max-width: 470px) {
   .part4 {
-    margin: 0 0 24px 0;
+    margin: 0 0 1.5rem 0;
   }
   h1 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   .part4left h2 {
     display: none;
@@ -398,8 +398,8 @@ footer {
 
 @media only screen and (max-width: 470px) {
   footer {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .terms {
     display: none;
